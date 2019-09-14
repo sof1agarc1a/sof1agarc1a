@@ -486,6 +486,43 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+
+  .hamburger-icon {
+    /* width: 32px;
+    height: 3px;
+    background-color: white;
+    margin: 8px 2.5vw;
+    transition: 0.6s;
+    position: fixed;
+    z-index: 10; */
+    display: flex;
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    flex-direction: column;
+    margin: 10px 4%;
+    justify-content: space-around;
+    z-index: 3;
+  }
+
+  .bar-1, .bar-2, .bar-3 {
+    width: 32px;
+    background-color: white;
+    height: 2px;
+  }
+
+  .transform .bar-1 {
+    transform: rotate(-45deg) translate(-8px, 7px);
+  }
+
+  .transform .bar-2 {
+    opacity: 0;
+  }
+
+  .transform .bar-3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
   nav {
     z-index: 2;
     position: fixed;
@@ -515,7 +552,7 @@ footer {
   }
 
   .hero {
-    height: 70vh;
+    height: 73vh;
   }
 
   .hero-text p:nth-child(1) {
@@ -532,7 +569,7 @@ footer {
 
   .projects-container {
     padding-top: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 16px;
   }
 
   .projects-container p {
@@ -550,13 +587,13 @@ footer {
     margin-bottom: 46px;
   }
 
-  /* .project-wrapper:hover img {
+  .project-wrapper:hover img {
     opacity: 0.07;
   }
 
   .project-wrapper:hover .projectinfo-container {
     opacity: 1;
-  } */
+  }
 
   .languages-wrapper {
     margin-top: 5%;
@@ -611,15 +648,18 @@ footer {
 
   .about-wrapper {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 60px 12px;
+    padding: 60px 20px;
   }
 
   .about-wrapper img {
     padding: 4px;
-    width: 120px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
   }
 
   .about-text-wrapper p {
@@ -627,15 +667,15 @@ footer {
   }
 
   .about-text-wrapper p:nth-child(1) {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .about-text-wrapper p:nth-child(2) {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .about-text-wrapper p:nth-child(3) {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .kt-wrapper {

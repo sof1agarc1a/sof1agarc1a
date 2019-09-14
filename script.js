@@ -38,3 +38,9 @@ window.addEventListener('scroll', () => {
     contactLink.classList.remove('active');
   }
 });
+
+
+const heightOutput = document.querySelector('.hero');
+const heroHeight = heightOutput.clientHeight;
+
+heightOutput.style.height = heroHeight + "px";
