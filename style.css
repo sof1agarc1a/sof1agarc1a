@@ -590,7 +590,7 @@ footer {
   }
 
   .languages-wrapper {
-    margin-top: 5%;
+    margin-top: 4%;
   }
 
   .extra-margin {
@@ -609,7 +609,7 @@ footer {
   .projects-container .project-description {
     width: 80%;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 6px;
   }
 
   .projects-container .project-title {
@@ -620,7 +620,7 @@ footer {
 
   .projects-container .project-source {
     font-size: 16px;
-    padding: 4px 12px;
+    padding: 2px 12px;
     margin: 0px 6px 6px 0px;
   }
 
