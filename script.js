@@ -39,8 +39,21 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
+// prevent page from resizing and causing lag
 const heightOutput = document.querySelector('.hero');
 const heroHeight = heightOutput.clientHeight;
-
 heightOutput.style.height = heroHeight + "px";
+
+//menu event
+const hamburger = document.querySelector('.hamburger-icon');
+const nav = document.querySelector('nav');
+const bar1 = document.querySelector('.bar-1');
+const bar2 = document.querySelector('.bar-2');
+const bar3 = document.querySelector('.bar-3');
+
+hamburger.addEventListener('click', () => {
+  bar1.classList.toggle('transform1');
+  bar2.classList.toggle('transform2');
+  bar3.classList.toggle('transform3');
+  nav.classList.toggle('hidden-nav')
+})

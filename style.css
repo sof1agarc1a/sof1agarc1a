@@ -18,9 +18,8 @@ nav {
 }
 
 nav a {
-  color: #23192B;
   color: white;
-  text-shadow: 0px 0px 50px #D99098;
+  text-shadow: 0px 0px 50px black;
   font-weight: 300;
   font-size: 17px;
   text-decoration: none;
@@ -488,17 +487,10 @@ footer {
 @media only screen and (max-width: 600px) {
 
   .hamburger-icon {
-    /* width: 32px;
-    height: 3px;
-    background-color: white;
-    margin: 8px 2.5vw;
-    transition: 0.6s;
-    position: fixed;
-    z-index: 10; */
     display: flex;
     position: fixed;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     flex-direction: column;
     margin: 10px 4%;
     justify-content: space-around;
@@ -506,49 +498,51 @@ footer {
   }
 
   .bar-1, .bar-2, .bar-3 {
-    width: 32px;
+    width: 28px;
     background-color: white;
-    height: 2px;
+    height: 1.5px;
+    transition: 0.3s;
   }
 
-  .transform .bar-1 {
-    transform: rotate(-45deg) translate(-8px, 7px);
+  .transform1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+    /* background-color: #23192B; */
   }
 
-  .transform .bar-2 {
+  .transform2 {
     opacity: 0;
   }
 
-  .transform .bar-3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+  .transform3 {
+    transform: rotate(45deg) translate(-7px, -6px);
+    /* background-color: #23192B; */
+
+  }
+
+  .hidden-nav {
+    opacity: 0;
+    padding-top: 0px;
+    visibility: hidden;
   }
 
   nav {
-    z-index: 2;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 15px;
+    padding: 9px 0px 8px 60px;
+    opacity: 1;
+    transition: 0.3s;
+    background-color: rgba(35, 25, 43, 0.9);
+    /* background-color: white; */
+    margin: 0;
   }
 
   nav a {
-    color: #23192B;
     color: white;
-    text-shadow: 0px 0px 50px #D99098;
-    font-weight: 300;
-    font-size: 17px;
-    text-decoration: none;
-    opacity: 0.7;
-    margin-bottom: 12px;
-    transition: 0.2s;
-    cursor: pointer;
+    /* color: #23192B; */
+
+    margin-bottom: 7px;
   }
 
   nav a:hover {
-    margin-left: 6px;
+    margin-left: 0px;
   }
 
   .hero {
@@ -604,7 +598,7 @@ footer {
   }
 
   .languages-wrapper p{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .lines:before, .lines:after, .right-line:after {
@@ -614,7 +608,7 @@ footer {
 
   .projects-container .project-description {
     width: 80%;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
   }
 
@@ -638,16 +632,7 @@ footer {
     flex-direction: column;
   }
 
-  /* .about-me {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-
   .about-wrapper {
-    display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -656,7 +641,7 @@ footer {
   }
 
   .about-wrapper img {
-    padding: 4px;
+    padding: 6px;
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
@@ -726,10 +711,6 @@ footer {
     margin-bottom: 8px;
   }
 
-  .icon-contact-wrapper {
-    /* margin-bottom: 50px; */
-  }
-
   .icon-container svg {
     margin: 5px;
   }
@@ -744,9 +725,7 @@ footer {
     width: 26px;
   }
 
-  /* .active {
-    opacity: 1;
-    font-size: 20px;
-    transition: 0.2s;
-  } */
+  .active {
+    font-weight: 400;
+  }
 }
